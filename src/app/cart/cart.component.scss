@@ -1,0 +1,118 @@
+h1 span{
+    color: #FF6452;
+    
+}
+
+.texto{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto p{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.container{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    padding-bottom: 50px;
+    width: 340px;
+    background-color: #282422;
+    /* Cor de fundo */
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+span{
+    margin-top: 5px;
+}
+.price{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+p{
+    font-size: 1rem;
+    font-weight: 100;
+    width: 70%;
+}
+
+.buy{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button{
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    cursor: pointer;
+    color: white;
+    font-size: 0.9rem;
+}
+
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(to bottom, #3D5171, #76403B);
+    border-radius: 50%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid #282422;
+    z-index: 1;
+}
+
+.heart {
+    font-size: 30px;
+    color: #ff4500;
+    /* Cor do coração */
+}
+
+
+
+.imgCart {
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(to bottom, #3D5171, #76403B);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.imgCart img{
+    margin-top:20px;
+    width: 200px;
+}
+
+.imgCart::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 5px;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 50px solid #282422;
+}

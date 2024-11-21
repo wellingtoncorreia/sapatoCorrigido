@@ -1,0 +1,21 @@
+<div class="texto">
+    <h1>Popular <span>Products</span></h1>
+    <p>The insole are Confortable so you can wear them everyday</p>
+</div>
+
+<div class="container">
+    <div class="cart" *ngFor="let product of products">
+      <div class="imgCart">
+        <img [src]="product.imageUrl" alt="{{ product.name }}" />
+        <div class="circle">
+          <div class="heart">❤</div>
+        </div>
+      </div>
+      <span>{{ product.name }}</span>
+      <p>{{ product.description }}</p>
+      <div class="buy">
+        <span class="price">{{ product.price | currency: 'BRL' }}</span>
+        <button (click)="changeColor()" [ngStyle]="{'background-color': buttonColor}">Add to Cart</button>
+      </div>
+    </div>
+  </div>
